@@ -1,0 +1,24 @@
+{
+  "name": "flux-react-calculator",
+  "version": "0.0.0",
+  "homepage": "https://github.com/am5a03/flux-react-calculator",
+  "authors": [
+    "Raymond Chan"
+  ],
+  "description": "Flux 101",
+  "keywords": [
+    "flux"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "~0.12.2"
+  }
+}
