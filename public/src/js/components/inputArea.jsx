@@ -1,4 +1,5 @@
 var InputArea = React.createClass({
+	id: 0,
 	getInitialState: function() {
 		return {
 			value: ''
@@ -9,7 +10,7 @@ var InputArea = React.createClass({
 			var currentExpression = e.currentTarget.value;			
 			try {
 				var answer = eval(currentExpression);
-				this.props.writeHistory({ 'formula' : currentExpression, 'answer' : answer});
+				this.props.writeHistory({ 'expression' : currentExpression, 'answer' : answer, 'id' : ++this.id});
 			} catch (ex) {
 
 			} finally {
